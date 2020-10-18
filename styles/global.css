@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    color: #030722;
 }
 
 footer {
@@ -21,6 +22,15 @@ footer a {
 footer a:hover {
     color: #edffe3;
     background-color: #385e62;
+}
+
+footer > * {
+    width: calc(33.33334% - 2rem);
+    padding: 0 1rem;
+}
+
+footer .attributions {
+    text-align: center;
 }
 
 footer .about-us {

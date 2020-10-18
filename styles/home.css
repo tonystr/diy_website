@@ -1,0 +1,39 @@
+
+header {
+    text-align: center;
+    padding: 18rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+section {
+    padding: 2rem 15%;
+    min-height: 150px;
+}
+
+section:nth-child(even) {
+    background-color: #f7f9fe;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+#ai-guided-self-repair {
+    /* height of image contained */
+    min-height: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ai-guided-self-repair p {
+    font-size: 1.3rem;
+}
+
+#ai-guided-self-repair img {
+    flex-shrink: 0;
+    padding-left: 5rem;
+}

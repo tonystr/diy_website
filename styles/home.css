@@ -37,3 +37,33 @@ section h2 {
     flex-shrink: 0;
     padding-left: 5rem;
 }
+
+.products-previews .products {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.products-previews .products::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2rem;
+    z-index: 3;
+    background: linear-gradient(to right, transparent, #f7f9fe);
+}
+
+.products-previews .product {
+    margin: 1rem;
+}
+
+.products-previews .product img {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+    border: 2px solid #d1dae1;
+}
+
+.products-previews .view-all {
+    text-align: right;
+}

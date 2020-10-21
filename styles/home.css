@@ -1,11 +1,24 @@
 
 header {
     text-align: center;
-    padding: 18rem 0;
+    background-image: url('../images/tech_bg.svg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 3.6rem;
+    margin-bottom: 0;
+    color: #131a36;
+}
+
+header p {
+    font-size: 1.8rem;
+    color: #556;
+    font-style: italic;
 }
 
 section {

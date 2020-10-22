@@ -14,6 +14,15 @@ footer {
     justify-content: space-between;
 }
 
+a {
+    color: #007060;
+}
+
+a:hover {
+    background-color: #385e62;
+    color: #edffe3;
+}
+
 /* Link on dark background */
 footer a {
     color: #a0f0da;
@@ -40,4 +49,30 @@ footer .about-us {
 details summary:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+
+.fixed-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: .2rem 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e7e9ee;
+}
+
+.fixed-header .brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+.fixed-header nav > * {
+    margin-left: 1rem;
+    font-size: 1.2rem;
 }

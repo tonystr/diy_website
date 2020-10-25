@@ -1,4 +1,23 @@
 
 header {
-    padding-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-color: #f7f9fe;
+}
+
+
+#unsdg {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#unsdg .info {
+    max-width: 50vw;
+    margin-left: 4rem;
 }

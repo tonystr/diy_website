@@ -88,10 +88,13 @@
             </div>
         </section>
         <section id="checkout">
-            <button class="disabled">Checkout</button>
+            <button class="disabled" id="checkout-button">Checkout</button>
             <p class="shopping-message">
                 Please select a product to checkout.
             </p>
+            <noscript>
+                The store doesn't work without JavaScript. Please enable JavaScript or use a newer browser.
+            </noscript>
         </section>
         <footer>
             <div>
@@ -111,5 +114,16 @@
                 and <a href="https://github.com/zkreso" target="_blank">Zlatko Kreso</a>.
             </details>
         </footer>
+        <script>
+            for (const elm of Array.from(document.querySelectorAll('a[href="#shopping"]'))) {
+                elm.addEventListener('click', e => {
+                    const product = e.target.parentNode.parentNode.parentNode.querySelector('.info-bar h3').innerText;
+
+                    document.getElementById('checkout-button').classList.remove('disabled');
+                    document.querySelector('#checkout .shopping-message').innerText = `Click to purchase ${product}`;
+                });
+            }
+
+        </script>
     </body>
 </html>

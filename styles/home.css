@@ -130,6 +130,7 @@ section h2 {
     text-decoration: none;
     color: #ffffff;
     background-color: #00af60;
+    transition: all .1s;
 
     border: 2px solid #00af60;
     box-shadow: 0 1px 8px rgba(0, 0, 0, .14);
@@ -137,7 +138,7 @@ section h2 {
 
 #products .view-all a:hover {
     color: #edffe3;
-    border-color: #edffe3;
+    border-color: #2f2f3c;
     background-color: #385e62;
     box-shadow: 0 1px 8px rgba(0, 0, 0, .24);
 }

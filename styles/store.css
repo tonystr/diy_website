@@ -9,6 +9,8 @@ section {
     min-height: 150px;
 }
 
+/* Store section */
+
 #store .product {
     min-height: 360px;
     margin-bottom: 2rem;
@@ -47,4 +49,38 @@ section {
 
 #store .product .action-bar {
     text-align: right;
+}
+
+/* Checkout section */
+
+#checkout button {
+    border-radius: 7px;
+    font-size: 1.2rem;
+    padding: .2rem .6rem;
+    transition: all .1s;
+    border: 2px solid #00af60;
+    background-color: #00af60;
+    color: #ffffff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .14);
+}
+
+#checkout button:hover {
+    cursor: pointer;
+    color: #edffe3;
+    border-color: #2f2f3c;
+    background-color: #385e62;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .24);
+}
+
+#checkout button.disabled {
+    border: 2px solid #e8e8e8;
+    background-color: #e8e8e8;
+    color: inherit;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#checkout button.disabled:hover {
+    border-color: #ff2233;
+    background-color: #ffada8;
 }

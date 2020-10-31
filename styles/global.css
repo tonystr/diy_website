@@ -6,20 +6,12 @@ html, body {
     color: #030722;
 }
 
-footer {
-    padding: 1rem 2rem;
-    background-color: #2f2f3c;
-    color: #e0e2ff;
-    display: flex;
-    justify-content: space-between;
+p {
+    line-height: 1.7;
 }
 
 a {
     color: #007060;
-}
-
-p {
-    line-height: 1.7;
 }
 
 a:hover {
@@ -30,6 +22,16 @@ a:hover {
 /* Link on dark background */
 footer a {
     color: #a0f0da;
+}
+
+/* Footer */
+
+footer {
+    padding: 1rem 2rem;
+    background-color: #2f2f3c;
+    color: #e0e2ff;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer a:hover {
@@ -50,11 +52,24 @@ footer .about-us {
     text-align: right;
 }
 
-details summary:hover {
+footer .center {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer details summary {
     cursor: pointer;
     text-decoration: underline;
 }
 
+footer details summary:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* Fixed header */
 
 .fixed-header {
     position: fixed;

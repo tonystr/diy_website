@@ -1,35 +1,10 @@
 
 header::before {
-    content: '';
-    display: block;
-    background-image: url("../images/electronics_bg.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 14rem;
-    background-color: #2f2f3c;
-}
-
-header {
-    padding-bottom: 6rem;
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-header h1 {
-    padding-top: 6rem;
-}
-
-header p {
-    color: #334;
+    background-image: url("../images/headers/electronics.jpg");
 }
 
 section:nth-child(odd) {
     background-color: #f7f9fe;
-}
-
-section h2 {
-    font-size: 1.8rem;
 }
 
 section {
@@ -37,10 +12,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-section .info p {
-    font-size: 1.2rem;
 }
 
 #unsdg .info {

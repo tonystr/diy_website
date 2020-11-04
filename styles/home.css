@@ -2,10 +2,14 @@
 header {
     text-align: center;
     background-image: url('../images/tech_bg.svg');
+    height: 100px; /* IE support */
     min-height: 100vh;
+    display: -ms-flexbox; /* IE support */
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    -ms-flex-pack: center; /* IE support */
     flex-direction: column;
 }
 
@@ -69,6 +73,7 @@ section h2 {
 
 #reccomended-tools .reccomendation > img {
     border: 2px solid #d1dae1;
+    flex-shrink: 0; /* IE Support */
 }
 
 #reccomended-tools .reccomendation .about {

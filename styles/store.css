@@ -83,3 +83,13 @@ section {
     border-color: #ff2233;
     background-color: #ffada8;
 }
+
+/* Message after a purchase */
+#checkout .after-purchase {
+    height: calc(100vh - 8rem - 1.5rem - 1px);
+    margin: 0;
+    display: flex;
+    text-align: center; /* For browsers that do not support flex */
+    justify-content: center;
+    align-items: center;
+}

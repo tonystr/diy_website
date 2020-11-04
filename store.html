@@ -89,13 +89,13 @@
             </div>
         </section>
         <section id="checkout">
-            <button class="disabled" id="checkout-button">Checkout</button>
-            <p class="shopping-message">
-                Please select a product to checkout.
-            </p>
             <noscript>
                 The store doesn't work without JavaScript. Please enable JavaScript or use a newer browser.
             </noscript>
+            <button class="disabled" id="checkout-button">Checkout</button>
+            <p class="shopping-message">
+                Please select a product in order to checkout.
+            </p>
         </section>
         <footer>
             <div>
@@ -119,14 +119,60 @@
             </details>
         </footer>
         <script>
-            for (const elm of Array.from(document.querySelectorAll('a[href="#shopping"]'))) {
-                elm.addEventListener('click', e => {
-                    const product = e.target.parentNode.parentNode.parentNode.querySelector('.info-bar h3').innerText;
+            // Send error message for Internet Explorer because it's JavaScript support is outdated
+            var ua = window.navigator.userAgent;
+            if (ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0) {
+                document.querySelector('.shopping-message').innerText = 'Internet explorer is too old to handle this website. Please upgrade to a newer browsers in order to use our store';
+            }
 
-                    document.getElementById('checkout-button').classList.remove('disabled');
-                    document.querySelector('#checkout .shopping-message').innerText = `Click to purchase ${product}`;
+            const cart = new Set();
+            const checkoutButton = document.getElementById('checkout-button');
+        </script>
+        <script>
+            // Script is placed at the bottom of this HTML file because
+            //   * it needs to run after the DOM has been initialized
+            //   * it's small and only used by this page, so no point in abstracting out to another file
+
+            function printCart(cartSet) {
+                const cartArr = Array.from(cart);
+                return cartSet.size === 1 ?
+                    cartArr[0] :
+                    `${cartArr.slice(0, -1).reduce((acc, val) => `${acc}, ${val}`)} and ${cartArr[cart.size - 1]}`;
+            }
+
+            for (const elm of Array.from(document.querySelectorAll('a[href="#shopping"]'))) {
+                elm.addEventListener('click', ({ target }) => {
+                    const product = target.parentNode.parentNode.parentNode.querySelector('.info-bar h3').innerText;
+
+                    if (cart.has(product)) {
+                        cart.delete(product);
+                        target.innerText = 'Add to cart 🛒';
+                    } else {
+                        cart.add(product);
+                        target.innerText = 'Remove from cart 🛒';
+                    }
+
+                    checkoutButton.className = cart.size === 0 ? 'disabled' : 'enabled';
+
+                    document.querySelector('#checkout .shopping-message').innerText = `Click to purchase ${printCart(cart)}`;
                 });
             }
+
+            function deleteElemment(elm) {
+                elm.parentNode.removeChild(elm);
+            }
+
+            checkoutButton.addEventListener('click', ({ target }) => {
+                if (cart.size === 0) return;
+
+                deleteElemment(document.querySelector('header'));
+                deleteElemment(document.querySelector('#store'));
+                document.querySelector('#checkout').innerHTML = `
+                    <div class="after-purchase">
+                        <h1>Thank you for shopping with us. Let's save the planet together!</h1>
+                    </div>
+                `;
+            });
         </script>
     </body>
 </html>

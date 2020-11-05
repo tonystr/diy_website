@@ -8,18 +8,42 @@ section:nth-child(odd) {
 }
 
 section {
-    padding: 2rem;
+    padding: 2rem 15vw;
+}
+
+#solution table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #d1dae1;
+    margin: 2rem 0;
+}
+
+#solution table tr :nth-child(odd) {
+    background-color: #f7f9fe;
+}
+
+#solution table th {
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#solution table td {
+    padding: 2rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.info-picture {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#unsdg .info {
-    max-width: 50vw;
+.info-picture.img-left .info {
     margin-left: 4rem;
 }
 
-#prototype .info {
-    max-width: 50vw;
+.info-picture.img-right .info {
     margin-right: 4rem;
 }

@@ -86,79 +86,13 @@ section p {
     font-size: 1.8rem;
 }
 
-/* Products section */
-
-#products .products {
-    display: flex;
-    overflow-x: hidden;
-    position: relative;
-}
-
-#products .products::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 2rem;
-    z-index: 3;
-    background: linear-gradient(to right, transparent, #f7f9fe);
-}
-
-#products .product {
-    margin-right: 2rem;
-}
-
-#products .product img {
-    border: 2px solid #d1dae1;
-}
-
-#products .product .info-bar {
-    display: flex;
-    justify-content: space-between;
-}
-
-#products .product .info-bar > * {
-    margin: .8rem 0 0 0;
-    font-size: 1.2rem;
-}
-
-#products .view-all {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#products .view-all a {
-    padding: .2rem .6rem;
-    border-radius: 7px;
-    display: block;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #00af60;
-    transition: all .1s;
-
-    border: 2px solid #00af60;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, .14);
-}
-
-#products .view-all a:hover {
-    color: #edffe3;
-    border-color: #2f2f3c;
-    background-color: #385e62;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, .24);
-}
-
-#ice-bergs {
-}
-
 #ice-bergs img {
     width: 100%;
     box-shadow: 0 2px 8px rgba(0, 1, 5, .12);
 }
 
-
 .unsdg-squares {
+    margin-top: 3rem;
     display: flex;
     height: 70px;
     justify-content: center;

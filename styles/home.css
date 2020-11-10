@@ -91,6 +91,10 @@ section p {
     box-shadow: 0 2px 8px rgba(0, 1, 5, .12);
 }
 
+#unsdg .about {
+    margin: 6rem 0;
+}
+
 .unsdg-squares {
     margin-top: 3rem;
     display: flex;

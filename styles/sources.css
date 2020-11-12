@@ -1,4 +1,9 @@
 
+@keyframes source-target-highlight {
+    0%   { border-color: #00ffff; background-color: #0060ff }
+    100% {  }
+}
+
 header::before {
     background-image: url("../images/headers/library.jpg");
 }
@@ -19,7 +24,10 @@ header::before {
 .source:target {
     border-top: 4px solid #a0f0da;
     border-bottom: 4px solid #a0f0da;
+    animation: 1.3s source-target-highlight;
     background-color: #a0f0da44;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .source blockquote {
@@ -38,6 +46,14 @@ header::before {
     margin-top: -9px;
     opacity: .1;
     margin-right: .4rem;
+}
+
+.source .tag {
+    float: right;
+    font-weight: 400;
+    background-color: #f4e3c0;
+    border-radius: 4px;
+    padding: 0 6px;
 }
 
 .source .key-value .key {

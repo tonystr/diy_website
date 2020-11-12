@@ -109,6 +109,10 @@ footer details summary:hover {
     align-items: center;
 }
 
+.info-picture img {
+    max-width: 40%;
+}
+
 .info-picture.img-left .info {
     margin-left: 4rem;
 }

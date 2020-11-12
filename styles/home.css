@@ -42,7 +42,7 @@ section p {
     font-size: 1.3rem;
 }
 
-/* AI-guided self-repair section */
+/* Problem section */
 
 #problem {
     /* height of image contained */
@@ -54,7 +54,6 @@ section p {
 
 #problem img {
     flex-shrink: 0;
-    margin-left: 5rem;
     box-shadow: 0 2px 8px rgba(0, 1, 5, .12);
 }
 

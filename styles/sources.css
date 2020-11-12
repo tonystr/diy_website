@@ -2,3 +2,44 @@
 header::before {
     background-image: url("../images/headers/library.jpg");
 }
+
+#source-list {
+    margin-bottom: 4rem;
+}
+
+.source {
+    /* border-top: 2px solid #d1dae1; */
+    padding: 3rem 15%;
+}
+
+.source:nth-child(odd) {
+    background-color: #f7f9fe;
+}
+
+.source:target {
+    border-top: 4px solid #a0f0da;
+    border-bottom: 4px solid #a0f0da;
+    background-color: #a0f0da44;
+}
+
+.source blockquote {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.source blockquote::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/quote.svg');
+    width: 3rem;
+    height: 3rem;
+    margin-top: -9px;
+    opacity: .1;
+    margin-right: .4rem;
+}
+
+.source .key-value .key {
+    font-weight: bold;
+}

@@ -10,3 +10,7 @@ section:nth-child(odd) {
 section {
     padding: 2rem 15vw;
 }
+
+.fix {
+    float: left;
+}

@@ -33,3 +33,39 @@ section {
     padding: 2rem 1.5rem;
     font-size: 1.2rem;
 }
+
+/* Reactivity */
+
+@media(max-width: 972px) {
+    #solution {
+        padding: 2rem 0;
+    }
+
+    #solution .info {
+        padding: 2rem 15vw;
+    }
+
+
+}
+
+/* Mobile */
+@media(max-width: 694px) {
+
+    #solution table  {
+        width: 300%;
+        background-color: transparent;
+        margin: 0;
+        border: none;
+    }
+
+    #solution table th {
+        font-size: 2rem;
+    }
+
+    #solution .table-wrapper {
+        overflow-x: scroll;
+        border-top: 2px solid #d1dae1;
+        border-bottom: 2px solid #d1dae1;
+    }
+
+}

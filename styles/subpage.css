@@ -31,3 +31,17 @@ section h2 {
 section p {
     font-size: 1.2rem;
 }
+
+/* Reactivity */
+
+/* Mobile */
+@media(max-width: 694px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        padding: 0 .2rem;
+        font-size: 1.3rem;
+    }
+}

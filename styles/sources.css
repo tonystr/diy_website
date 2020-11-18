@@ -8,12 +8,15 @@ header::before {
     background-image: url("../images/headers/library.jpg");
 }
 
+section h2 a {
+    text-decoration: none;
+}
+
 #source-list {
     margin-bottom: 4rem;
 }
 
 .source {
-    /* border-top: 2px solid #d1dae1; */
     padding: 3rem 15%;
 }
 
@@ -35,6 +38,7 @@ header::before {
     align-items: flex-start;
     margin-left: 0;
     padding-left: 0;
+    margin-right: 0;
 }
 
 .source blockquote::before {
@@ -43,6 +47,7 @@ header::before {
     background-image: url('../images/quote.svg');
     width: 3rem;
     height: 3rem;
+    flex-shrink: 0;
     margin-top: -9px;
     opacity: .1;
     margin-right: .4rem;
@@ -58,4 +63,13 @@ header::before {
 
 .source .key-value .key {
     font-weight: bold;
+}
+
+@media(max-width: 1030px) {
+    .source .tag {
+        width: 100%;
+        margin: .7rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }

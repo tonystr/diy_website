@@ -102,3 +102,38 @@ section p {
 .read-more {
     white-space: nowrap;
 }
+
+/* Reactivity */
+
+@media(max-width: 935px) {
+    #ice-bergs {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #ice-bergs img {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .unsdg-squares {
+        height: auto;
+    }
+
+    .unsdg-squares .grey {
+        display: none;
+    }
+
+}
+
+@media(max-width: 694px) {
+    .unsdg-squares {
+        height: 10vw;
+        margin-top: 0;
+    }
+
+    #unsdg .about {
+        margin: 3rem 0;
+    }
+}

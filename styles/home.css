@@ -2,6 +2,7 @@
 header {
     text-align: center;
     background-image: url('../images/tech_bg.svg');
+    background-size: cover;
     height: 100px; /* IE support */
     min-height: 100vh;
     display: -ms-flexbox; /* IE support */
@@ -106,13 +107,10 @@ section p {
 /* Reactivity */
 
 @media(max-width: 1337px) {
-
     .unsdg-squares .grey {
         display: none;
     }
-
 }
-
 
 @media(max-width: 935px) {
     #ice-bergs {
@@ -129,12 +127,20 @@ section p {
 
 /* Mobile */
 @media(max-width: 694px) {
-    .unsdg-squares {
-        height: 10vw;
-        margin-top: 0;
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.4rem;
     }
 
     #unsdg .about {
         margin: 3rem 0;
+    }
+
+    .unsdg-squares {
+        height: 10vw;
+        margin-top: 0;
     }
 }

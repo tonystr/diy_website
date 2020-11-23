@@ -10,3 +10,19 @@ section:nth-child(odd) {
 section {
     padding: 2rem 15vw;
 }
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.center-image img {
+    box-shadow: 0 2px 12px rgba(0, 1, 5, .14);
+}
+
+@media(max-width: 1434px) {
+    .center-image img {
+        width: 100%;
+    }
+}

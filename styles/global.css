@@ -31,6 +31,7 @@ footer a {
 /* Footer */
 
 footer {
+    margin-top: 4rem;
     padding: 1.3rem 2rem;
     background-color: #2f2f3c;
     color: #e0e2ff;
@@ -173,5 +174,11 @@ footer details summary:hover {
     .fixed-header nav > * {
         margin: 0 .5rem;
         font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 386px) {
+    .fixed-header nav > * {
+        font-size: 1rem;
     }
 }

@@ -46,7 +46,8 @@ section p {
     }
 
     section h2 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+        word-break: break-word;
     }
 
     section p {

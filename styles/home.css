@@ -18,11 +18,18 @@ header h1 {
     font-size: 3.6rem;
     margin-bottom: 0;
     color: #131a36;
+    padding-right: 40px;
 }
 
 header p {
     font-size: 1.7rem;
     color: #556;
+}
+
+header .brand img {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 9px;
 }
 
 section {
@@ -102,6 +109,12 @@ section p {
 @media(max-width: 694px) {
     header h1 {
         font-size: 2rem;
+    }
+
+    header .brand img {
+        height: 37px !important;
+        margin-top: 7px;
+        margin-left: 6px;
     }
 
     header p {

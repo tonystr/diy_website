@@ -82,6 +82,8 @@ footer details summary:hover {
     justify-content: space-between;
     align-items: center;
 
+    z-index: 100;
+
     left: 0;
     right: 0;
     top: 0;
@@ -90,11 +92,19 @@ footer details summary:hover {
     border-bottom: 1px solid #e7e9ee;
 }
 
+.fixed-header > a {
+    text-decoration: none;
+}
+
 .fixed-header .brand {
     font-size: 1.6rem;
     font-weight: bold;
 }
 
+.fixed-header .brand img {
+    position: absolute;
+    padding-left: .4rem;
+}
 
 .fixed-header nav > * {
     margin-left: 2rem;
@@ -161,7 +171,7 @@ footer details summary:hover {
 }
 
 /* Mobile */
-@media(max-width: 694px) {
+@media(max-width: 750px) {
     .fixed-header {
         flex-direction: column;
         padding: .2rem 0;

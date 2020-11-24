@@ -111,4 +111,12 @@ section p {
     #unsdg .about {
         margin: 3rem 0;
     }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+
+    section p {
+        font-size: 1.1rem;
+    }
 }

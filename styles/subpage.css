@@ -44,4 +44,12 @@ section p {
         padding: 0 .2rem;
         font-size: 1.3rem;
     }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+
+    section p {
+        font-size: 1.1rem;
+    }
 }

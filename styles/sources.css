@@ -143,6 +143,10 @@ blockquote {
     padding: 0 6px;
 }
 
+.source .key-value {
+    overflow-x: hidden;
+}
+
 .source .key-value .key {
     font-weight: bold;
 }

@@ -12,6 +12,10 @@ section h2 a {
     text-decoration: none;
 }
 
+blockquote {
+    font-size: 1.3rem;
+}
+
 #source-list {
     margin-bottom: 4rem;
 }

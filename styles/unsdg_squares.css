@@ -1,0 +1,36 @@
+
+.unsdg-squares {
+    margin-top: 3rem;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+
+.unsdg-squares img {
+    flex-shrink: 0;
+    margin: 0 5px;
+}
+
+.unsdg-squares .grey {
+    filter: grayscale(100%);
+    margin: 5px;
+    width: auto;
+    flex-shrink: 1;
+    opacity: .15;
+}
+
+/* Reactivity */
+
+@media(max-width: 1337px) {
+    .unsdg-squares .grey {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media(max-width: 694px) {
+    .unsdg-squares {
+        height: 10vw;
+        margin-top: 0;
+    }
+}

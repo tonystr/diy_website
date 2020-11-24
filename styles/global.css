@@ -111,10 +111,13 @@ footer details summary:hover {
 
 .info-picture img {
     max-width: 40%;
+    flex-shrink: 0;
+    align-self: center;
 }
 
 .info-picture.img-left .info {
     margin-left: 4rem;
+    flex-shrink: 1;
 }
 
 .info-picture.img-right .info {

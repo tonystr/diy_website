@@ -8,8 +8,9 @@
         <link href="./styles/global.css" rel="stylesheet">
         <link href="./styles/subpage.css" rel="stylesheet">
         <link href="./styles/sources.css" rel="stylesheet">
+        <script src="./files/sources_search.js" type="application/javascript"></script>
     </head>
-    <body id="home">
+    <body id="home" onload="renderSearchbar()">
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
@@ -30,6 +31,10 @@
                 </p>
             </div>
         </header>
+        <noscript id="enable-javascript">
+            <a href="https://enable-javascript.com/" target="_blank">Enable JavaScript</a> to see a searchbar for this site.
+        </noscript>
+        <div id="search"></div>
         <section id="source-list">
             <div class="source" id="gas-emissions">
                 <h2><a href="./sources.html#gas-emissions">[1] 50% Higher Gas Emissions</a></h2>

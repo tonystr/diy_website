@@ -16,12 +16,90 @@ blockquote {
     font-size: 1.3rem;
 }
 
+#enable-javascript {
+    text-align: center;
+}
+
 #source-list {
     margin-bottom: 4rem;
 }
 
+/* Searchbar */
+
+#search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#search input {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+    padding: .3rem .6rem;
+}
+
+#search button {
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    fill: #444;
+}
+
+#search button .search-icon {
+    display: inline;
+    margin-top: .12rem;
+    margin-bottom: -.4rem;
+    height: 1.6rem;
+}
+
+#search button:hover {
+    fill: #007060;
+}
+
+#search .search-bg {
+    border-radius: 4px;
+    padding: 1px;
+    background-color: #dfe1e5;
+    transition: background .14s;
+}
+
+#search .search-bg:focus-within {
+    background-color: #385e62;
+    border-color: #007060;
+}
+
+#search .search-bg:focus-within input {
+    color: #edffe3;
+}
+
+#search .search-bg:focus-within svg {
+    fill: #edffe3;
+}
+
+/* Hiding the element visually, but allow it to be read by screen-redaers */
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+}
+
+/* Source section */
+
 .source {
     padding: 3rem 15%;
+}
+
+.source.hidden {
+    display: none;
 }
 
 .source:nth-child(odd) {

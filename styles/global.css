@@ -112,6 +112,36 @@ footer details summary:hover {
     text-decoration: none;
 }
 
+.fixed-header .language {
+    font-size: 1rem;
+    height: 100%;
+}
+
+.fixed-header .lang-and-nav {
+    margin-left: 3rem;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.fixed-header .lang-and-nav.select-inside {
+    align-items: center;
+}
+
+.fixed-header .language-select {
+    border: none;
+    box-shadow: inset 0 0 0 1px #adadad;
+    font-size: .9rem;
+    font-family: inherit;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.fixed-header .language-select:hover {
+    box-shadow: inset 0 0 0 1px #5078d7;
+}
+
 /* section horizontal info/pucture division */
 
 .info-picture {
@@ -134,6 +164,13 @@ footer details summary:hover {
 }
 
 /* Reactivity */
+
+
+@media(max-width: 800px) {
+    .fixed-header .lang-and-nav {
+        margin-left: 0;
+    }
+}
 
 @media(max-width: 935px) {
     footer {
@@ -184,6 +221,12 @@ footer details summary:hover {
     .fixed-header nav > * {
         margin: 0 .5rem;
         font-size: 1.2rem;
+    }
+
+    .fixed-header .lang-and-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -1,6 +1,7 @@
 
 @keyframes fade-in-opacity {
     0%   { opacity: 0; }
+    30%  { opacity: 0; }
     100% { opacity: 1; }
 }
 
@@ -104,13 +105,11 @@ footer details summary:hover {
 .fixed-header .brand {
     font-size: 1.6rem;
     font-weight: bold;
-    animation: fade-in-opacity .5s;
 }
 
 .fixed-header .brand img {
     position: absolute;
     padding-left: .4rem;
-    animation: fade-in-opacity .3s;
 }
 
 .fixed-header nav > * {
@@ -122,7 +121,8 @@ footer details summary:hover {
 .fixed-header .language {
     font-size: 1rem;
     height: 100%;
-    animation: fade-in-opacity 1s;
+    /* Animation to mask transition from <a/> to javascript-inserted element */
+    animation: fade-in-opacity .88s;
 }
 
 .fixed-header .lang-and-nav {
@@ -131,7 +131,6 @@ footer details summary:hover {
     align-items: baseline;
     flex-wrap: wrap;
     justify-content: right;
-    animation: fade-in-opacity .5s;
 }
 
 .fixed-header .lang-and-nav.select-inside {
@@ -145,10 +144,25 @@ footer details summary:hover {
     font-family: inherit;
     border-radius: 3px;
     cursor: pointer;
+    /* Animation to mask transition from <a/> to javascript-inserted element */
+    animation: fade-in-opacity .88s;
 }
 
 .fixed-header .language-select:hover {
     box-shadow: inset 0 0 0 1px #5078d7;
+}
+
+/* Hiding the element visually, but allow it to be read by screen-redaers */
+
+.fixed-header .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
 }
 
 /* section horizontal info/pucture division */

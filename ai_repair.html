@@ -21,19 +21,23 @@
         <link type="text/css" href="./styles/subpage.css"       rel="stylesheet">
         <link type="text/css" href="./styles/ai_repair.css"     rel="stylesheet">
         <link type="text/css" href="./styles/unsdg_squares.css" rel="stylesheet">
+        <script charset="utf-8" src="./files/languge_switch.js" type="application/javascript"></script>
     </head>
-    <body id="home">
+    <body id="home" onload="renderLanguageSwitch()">
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
                     RepairLens <img alt="RepairLens logo" height="37" src="./images/repairlens_logo.svg" />
                 </div>
             </a>
-            <nav>
-                <a href="./problem.html">The Problem</a>
-                <a href="./ai_repair.html">The Solution</a>
-                <a href="./sources.html">Sources</a>
-            </nav>
+            <div class="lang-and-nav">
+                <a class="language" href="./no/losning.html">Endre til Norsk</a>
+                <nav>
+                    <a href="./problem.html">The Problem</a>
+                    <a href="./ai_repair.html">The Solution</a>
+                    <a href="./sources.html">Sources</a>
+                </nav>
+            </div>
         </div>
         <header>
             <h1>Ai-Assisted Repair</h1>

@@ -20,19 +20,23 @@
         <link type="text/css" href="./styles/global.css"  rel="stylesheet">
         <link type="text/css" href="./styles/subpage.css" rel="stylesheet">
         <link type="text/css" href="./styles/privacy.css" rel="stylesheet">
+        <script charset="utf-8" src="./files/languge_switch.js" type="application/javascript"></script>
     </head>
-    <body id="privacy">
+    <body id="privacy" onload="renderLanguageSwitch()">
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
                     RepairLens <img alt="RepairLens logo" height="37" src="./images/repairlens_logo.svg" />
                 </div>
             </a>
-            <nav>
-                <a href="./problem.html">The Problem</a>
-                <a href="./ai_repair.html">The Solution</a>
-                <a href="./sources.html">Sources</a>
-            </nav>
+            <div class="lang-and-nav">
+                <a class="language" href="./no/losning.html">Endre til Norsk</a>
+                <nav>
+                    <a href="./problem.html">The Problem</a>
+                    <a href="./ai_repair.html">The Solution</a>
+                    <a href="./sources.html">Sources</a>
+                </nav>
+            </div>
         </div>
         <header>
             <h1>Privacy &amp; Terms</h1>

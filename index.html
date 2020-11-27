@@ -21,8 +21,9 @@
         <link type="text/css" href="./styles/home.css" rel="stylesheet">
         <link type="text/css" href="./styles/unsdg_squares.css" rel="stylesheet">
         <script charset="utf-8" src="./files/languge_switch.js" type="application/javascript"></script>
+        <script charset="utf-8" src="./files/voiceover.js" type="application/javascript"></script>
     </head>
-    <body id="home" onload="renderLanguageSwitch()">
+    <body id="home" onload="renderLanguageSwitch(); renderVoiceover()">
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
@@ -48,7 +49,13 @@
         </header>
         <section id="problem" class="info-picture img-right">
             <div class="info">
-                <h2>The Problem</h2>
+                <h2>
+                    The Problem
+                    <audio class="voiceover" controls>
+                        <source src="./audio/home/problem.mp3" type="audio/mp3">
+                        Your browser does not support audio.
+                    </audio>
+                </h2>
                 <p>
                     Our planet is in danger of global warming, and the effects will be felt in all areas sooner or later. Greenhouse gas emissions are more than 50 percent higher than in 1990.<a class="source" href="./sources.html#gas-emissions"><sup>[1]</sup></a> One of the largest causes of global warming appears to be human waste.<a class="source" href="./sources.html#climate-change-because-of-human-waste"><sup>[2]</sup></a>
                     <a class="read-more" href="./problem.html">Read more</a>
@@ -62,7 +69,13 @@
         <section id="solution">
             <div class="info-picture img-right">
                 <div class="info">
-                    <h2>The solution</h2>
+                    <h2>
+                        The solution
+                        <audio class="voiceover" controls>
+                            <source src="./audio/home/solution.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </h2>
                     <p>
                         By empowering individuals with the tool of an <abbr title="Artifical Intelligence">AI</abbr> that can identify electrical components and look up useful information on the fly, we believe we can make self-repair more accessible, which would in turn lower the amount of electronic waste.<a class="source" href="./sources.html#electronic-waste-survey"><sup>[3]</sup></a>
                         <a class="read-more" href="./ai_repair.html">Read more</a>
@@ -75,11 +88,24 @@
             <div class="about info-picture img-left">
                 <img src="./images/unsdg13.jpg" alt="UN SDG 13 - Climate Action" width="300" >
                 <div class="info">
-                    <h2>UN SDG 13: Climate Action</h2>
+                    <h2>
+                        UN SDG 13: Climate Action
+                        <audio class="voiceover" controls>
+                            <source src="./audio/unsdg13.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </h2>
                     <p>
                         We believe that by empowering individuals with tools to repair and construct electronics instead of buying and
                         throwing away, we can contribute to saving the environment. Read more about the United Nations'
                         Sustainable Development Goals <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html">here</a>.
+                        We believe our solution may help with other goals as well, such as
+                        <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-4-quality-education.html">#4</a>,
+                        <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-5-gender-equality.html">#5</a>,
+                        <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-8-decent-work-and-economic-growth.html">#8</a>,
+                        <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-9-industry-innovation-and-infrastructure.html">#9</a>,
+                        <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-10-reduced-inequalities.html">#10</a>, og
+                        <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html">#12</a>.
                     </p>
                 </div>
             </div>

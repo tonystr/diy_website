@@ -21,8 +21,9 @@
         <link type="text/css" href="./styles/subpage.css" rel="stylesheet">
         <link type="text/css" href="./styles/problem.css" rel="stylesheet">
         <script charset="utf-8" src="./files/languge_switch.js" type="application/javascript"></script>
+        <script charset="utf-8" src="./files/voiceover.js" type="application/javascript"></script>
     </head>
-    <body id="problem" onload="renderLanguageSwitch()">
+    <body id="problem" onload="renderLanguageSwitch(); renderVoiceover()">
         <div class="fixed-header" onload="renderLanguageSwitch()">
             <a href="./">
                 <div class="brand">
@@ -43,7 +44,13 @@
             <p>Global warming, its effects, and how we're causing it.</p>
         </header>
         <section>
-            <h2>Global warming</h2>
+            <h2>
+                Global warming
+                <audio class="voiceover" controls>
+                    <source src="./audio/problem/global_warming.mp3" type="audio/mp3">
+                    Your browser does not support audio.
+                </audio>
+            </h2>
             <p>
                 In the past 50 years the world has seen a rapid increase in global warming.
                 If nothing is done, we can expect to see changes such as a 10-degree Fahrenheit increase in the US over the next century.<a href="./sources.html#global-warming-101" class="source"><sup>[4]</sup></a>
@@ -52,7 +59,13 @@
             </p>
         </section>
         <section id="electronic-waste">
-            <h2>Electronic waste</h2>
+            <h2>
+                Electronic waste
+                <audio class="voiceover" controls>
+                    <source src="./audio/problem/electronic_waste.mp3" type="audio/mp3">
+                    Your browser does not support audio.
+                </audio>
+            </h2>
             <p>
                 Disposal of electronic waste is a contributing factor to increasing the world’s greenhouse gasses. Electronic waste releases toxins into soil and water, and affects the air when burnt or left to decompose.
                 In high concentration, these toxins are harmful to both humans and wildlife.<a href="./sources.html#e-waste-and-how-to-reduce-it" class="source"><sup>[7]</sup></a> The effects aren't immediately visible to the naked eye, due to the toxins being situated in the soil and left develop over time.
@@ -72,15 +85,21 @@
             </div>
         </section>
         <section>
-            <h2>How to fight it</h2>
+            <h2>
+                How to fight it
+                <audio class="voiceover" controls>
+                    <source src="./audio/problem/how_to_fight_it.mp3" type="audio/mp3">
+                    Your browser does not support audio.
+                </audio>
+            </h2>
             <p>
                 There are many ways to combat the growing electronic waste, and different measures have been implemented.
-                In the US they have started to create incentives for designing environmentally friendly electronics, and effective waste management.<a href="./sources.html#green-incentives-usa" class="source"><sup>[10]</sup></a>
-                In Japan they split the responsibility between manufacturers and consumers, where the manufacturers of computers and small appliances need to provide proper recycling facilities, and the consumers must pay for the transport and recycling of home appliances like TV’s and refrigerators.<a href="./sources.html#e-waste-and-how-to-reduce-it" class="source"><sup>[7]</sup></a>
+                The US has started to create incentives for designing environmentally friendly electronics, and effective waste management.<a href="./sources.html#green-incentives-usa" class="source"><sup>[10]</sup></a>
+                Japan splits the responsibility between manufacturers and consumers, where the manufacturers of computers and small appliances need to provide proper recycling facilities, and the consumers must pay for the transport and recycling of home appliances like TVs and refrigerators.<a href="./sources.html#e-waste-and-how-to-reduce-it" class="source"><sup>[7]</sup></a>
             </p>
             <p>
-                These solutions focus on the recycling and disposal of electronic waste, but our solution is more focused on preventing electronics from being thrown away before it’s necessary.
-                We will do that by encouraging people to fix their own devices, by making spare parts more available, and providing the necessary knowledge to take something apart and fixing it.
+                These solutions focus on the recycling and disposal of electronic waste, but our solution is focused on preventing electronics from being thrown away too early.
+                We want to achieve that by encouraging people to fix their own devices, making spare parts easily available, and providing the necessary knowledge to take something apart and fixing it.
                 <a href="./ai_repair.html">Read more</a>
             </p>
         </section>

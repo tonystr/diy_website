@@ -123,6 +123,7 @@ section p {
 
     header p {
         font-size: 1.4rem;
+        margin: 0 5vw;
     }
 
     #unsdg .about {

@@ -22,6 +22,7 @@ header h1 {
 header p {
     color: #334;
     font-size: 1.4rem;
+    margin: 0 5vw;
 }
 
 section h2 {

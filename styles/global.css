@@ -69,17 +69,6 @@ footer .center {
     align-items: baseline;
 }
 
-footer details summary {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-footer details summary:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    color: #ffffff;
-}
-
 /* Fixed header */
 
 .fixed-header {

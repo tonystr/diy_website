@@ -2,3 +2,57 @@
 header::before {
     background-image: url("../images/headers/about_us.jpg");
 }
+
+section:nth-child(even) {
+    background-color: #f7f9fe;
+}
+
+section {
+    padding: 4rem 15vw;
+}
+
+summary {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+summary:hover {
+    color: #385e62;
+}
+
+/* Developers */
+
+.developers {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #d1dae1;
+    margin-top: 2rem;
+}
+
+.developers article:nth-child(odd) {
+    background-color: #f7f9fe;
+}
+
+.developers article {
+    width: 33%;
+    padding: 0 2vw;
+    padding-bottom: 2rem;
+}
+
+.developers article h3 {
+    font-size: 1.6rem;
+}
+
+.developers article p {
+    font-size: 1.2rem;
+}
+
+.developers .key-value {
+    margin: 1rem 0;
+}
+
+.developers .key-value .key {
+    font-weight: bold;
+}
+
+/* Reactivity */

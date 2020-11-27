@@ -220,7 +220,7 @@ footer details summary:hover {
 /* Voiceover */
 
 .voiceover {
-    animation: fade-in-opacity 1s;
+    animation: fade-in-opacity 3s;
 }
 
 .voiceover-button {

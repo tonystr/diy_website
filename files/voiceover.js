@@ -11,6 +11,7 @@ function renderVoiceover() {
             <img src="./images/audio.png" alt="Sound icon">
         `;
         buttonElm.setAttribute('title', NOR ? 'Les høyt' : 'Play voiceover');
+        buttonElm.setAttribute('aria-label', NOR ? 'Les høyt' : 'Play voiceover');
         buttonElm.addEventListener('click', () => {
             buttonElm.classList.add('visually-hidden');
             audioElm.classList.remove('visually-hidden');

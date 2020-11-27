@@ -8,7 +8,7 @@ function renderLanguageSwitch() {
 
     divElm.innerHTML = `
         <label class="visually-hidden" for="language-select">${nor ? 'Språk: ' : 'Language: '}</label>
-        <select class="language-select" id="language-select">
+        <select class="language-select" id="language-select" aria-label="${nor ? 'Velg språk: ' : 'Select language: '}">
             ${nor ? `
                 <option>Norsk</option>
                 <option>English</option>

@@ -107,6 +107,10 @@ section p {
 
 /* Mobile */
 @media(max-width: 694px) {
+    section {
+        padding: 3rem 5vw;
+    }
+
     header h1 {
         font-size: 2rem;
     }

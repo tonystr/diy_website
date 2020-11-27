@@ -50,6 +50,9 @@ section {
 
 /* Mobile */
 @media(max-width: 694px) {
+    section {
+        padding: 3rem 5vw;
+    }
 
     #solution table  {
         width: 300%;

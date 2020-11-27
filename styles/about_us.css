@@ -55,9 +55,44 @@ summary:hover {
     font-weight: bold;
 }
 
+/* Development notes */
+
+#development time {
+    display: inline-block;
+    width: 158px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#development article {
+    display: flex;
+}
+
+#development article time {
+    flex-shrink: 0;
+}
+
 /* Reactivity */
 
 @media(max-width: 930px) {
+    #development article {
+        flex-direction: column;
+        margin-top: .5rem;
+    }
+
+    #development article .dash {
+        display: none;
+    }
+
+    #development article time {
+        width: auto;
+        text-align: left;
+    }
+
+    #development article .sep {
+        margin-left: 2rem;
+    }
+
     .developers {
         flex-direction: column;
     }

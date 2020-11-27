@@ -16,12 +16,24 @@ blockquote {
     font-size: 1.3rem;
 }
 
+#source-list {
+    margin-bottom: 4rem;
+}
+
+/* Search */
+
+#no-results,
 #enable-javascript {
     text-align: center;
 }
 
-#source-list {
-    margin-bottom: 4rem;
+#no-results {
+    margin: 5rem 0;
+    margin-bottom: 11rem;
+}
+
+#no-results.hidden {
+    margin: 0;
 }
 
 /* Searchbar */

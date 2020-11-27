@@ -38,7 +38,8 @@ footer a {
 
 footer {
     margin-top: 4rem;
-    padding: 1.3rem 2rem;
+    padding: 1.6rem 2rem;
+    font-size: 1.2rem;
     background-color: #2f2f3c;
     color: #e0e2ff;
     display: flex;
@@ -53,14 +54,7 @@ footer a:hover {
 footer > * {
     width: calc(33.33334% - 2rem);
     padding: 0 1rem;
-}
-
-footer .attributions {
     text-align: center;
-}
-
-footer .about-us {
-    text-align: right;
 }
 
 footer .center {

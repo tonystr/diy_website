@@ -37,7 +37,7 @@ section {
     min-height: 150px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #f7f9fe;
 }
 

@@ -3,7 +3,7 @@ header::before {
     background-image: url("../images/headers/ice_bergs.jpg");
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #f7f9fe;
 }
 

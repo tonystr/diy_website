@@ -3,7 +3,7 @@ header::before {
     background-image: url("../images/headers/electronics.jpg");
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
     background-color: #f7f9fe;
 }
 

@@ -230,6 +230,7 @@ footer details summary:hover {
     background: none;
     cursor: pointer;
     position: relative;
+    animation: fade-in-opacity .88s;
 }
 
 .voiceover-button img {

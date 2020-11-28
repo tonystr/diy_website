@@ -191,6 +191,7 @@ footer .center {
 .voiceover-button img {
     width: 26px;
     height: 26px;
+    max-width: 26px;
     align-self: baseline;
     margin: 0;
     padding: 0;
@@ -198,27 +199,6 @@ footer .center {
 
 .voiceover-button:hover {
     background: #385e62;
-}
-
-.info .voiceover-button {
-    margin-left: -8px;
-    padding: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
-    position: relative;
-}
-
-.info .voiceover-button:hover {
-    background: linear-gradient(to right, transparent 0%, transparent 14%, #385e62 14%, #385e62 86%, transparent 86%, transparent 100%);
-}
-
-.info .voiceover-button img {
-    width: 62px;
-    height: 26px;
-    align-self: baseline;
-    margin: 0;
-    padding: 0;
 }
 
 .voiceover-button:hover img {

@@ -95,6 +95,7 @@ footer .center {
 }
 
 #hover-tooltip.vanish {
+    opacity: 0;
     animation: fade-out-opacity .8s;
 }
 

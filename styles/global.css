@@ -250,17 +250,23 @@ footer .center {
     footer {
         flex-wrap: wrap;
         padding: 1rem 0;
+        justify-content: center;
     }
 
     footer > * {
-        width: calc(50% - 1.6rem);
-        padding: 0 .5rem;
+        width: auto;
+        padding: 0 .7rem;
         text-align: center !important;
     }
 
     footer > * {
         margin-bottom: 1.2rem;
     }
+
+    footer > :first-child {
+        width: calc(100% - .6rem);
+    }
+
 
     .info-picture {
         flex-direction: column;

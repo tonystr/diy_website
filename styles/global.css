@@ -29,6 +29,13 @@ a:hover {
     color: #edffe3;
 }
 
+code {
+    background-color: #d1dae1;
+    color: #000;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
 /* Link on dark background */
 footer a {
     color: #a0f0da;
@@ -167,9 +174,6 @@ footer .center {
     animation: fade-in-opacity .88s;
 }
 
-.fixed-header .language-select:hover {
-}
-
 /* section horizontal info/pucture division */
 
 .info-picture {
@@ -201,6 +205,8 @@ footer .center {
     margin: 0;
     padding: 0 8px;
     border: none;
+    height: 32px;
+    border-radius: 4px;
     background: none;
     cursor: pointer;
     position: relative;

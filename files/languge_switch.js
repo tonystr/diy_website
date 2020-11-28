@@ -26,5 +26,5 @@ function renderLanguageSwitch() {
 
     languageElm.parentElement.classList.add('select-inside');
     languageElm.parentElement.insertBefore(divElm, languageElm);
-    languageElm.parentElement.removeChild(languageElm);
+    languageElm.classList.add('visually-hidden');
 }

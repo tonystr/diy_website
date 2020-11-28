@@ -349,15 +349,25 @@ a.source:hover sup {
     }
 
     .fixed-header nav {
-        margin-top: .2rem;
-        width: 100vw;
+        margin: 0;
+        margin-top: .3rem;
+        padding: 0;
+        width: calc(100vw - 1rem);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .fixed-header nav > * {
         margin: 0 .5rem;
         font-size: 1.2rem;
+    }
+
+    .fixed-header nav > :last-child {
+        margin-right: 1rem;
+    }
+
+    .fixed-header nav > :first-child {
+        margin-left: 1rem;
     }
 
     .fixed-header .lang-and-nav {

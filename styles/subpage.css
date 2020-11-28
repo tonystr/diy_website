@@ -38,7 +38,12 @@ section p {
 /* Mobile */
 @media(max-width: 694px) {
     header h1 {
+        padding-top: 2rem;
         font-size: 2rem;
+    }
+
+    header::before {
+        height: 10rem;
     }
 
     header p {

@@ -21,8 +21,9 @@
         <link type="text/css" href="../styles/subpage.css" rel="stylesheet">
         <link type="text/css" href="../styles/problem.css" rel="stylesheet">
         <script charset="utf-8" src="../files/languge_switch.js" type="application/javascript"></script>
+        <script charset="utf-8" src="../files/voiceover.js" type="application/javascript"></script>
     </head>
-    <body id="problem" onload="renderLanguageSwitch()">
+    <body id="problem" onload="renderLanguageSwitch(); renderVoiceover()">
         <div class="fixed-header" onload="renderLanguageSwitch()">
             <a href="./">
                 <div class="brand">
@@ -44,7 +45,13 @@
                 <p>Global oppvarming, dens effekt, og hvordan vi forårsaker det.</p>
             </header>
             <section>
-                <h2>Global Oppvarming</h2>
+                <h2>
+                    Global Oppvarming
+                    <audio class="voiceover" controls>
+                        <source src="../audio/no/problemet/global_oppvarming.mp3" type="audio/mp3">
+                        Your browser does not support audio.
+                    </audio>
+                </h2>
                 <p>
                     De siste 50 årene har verden sett en rask økning i global oppvarming.
                     Hvis ingenting blir gjort, kan vi forvente å se endringer som en 10-graders Fahrenheit-økning i USA i løpet av det neste århundret.<a href="./kilder.html#global-warming-101" class="source"><sup>[4]</sup></a>
@@ -53,16 +60,22 @@
                 </p>
             </section>
             <section id="electronic-waste">
-                <h2>Elektrisk Søppel</h2>
+                <h2>
+                    Elektrisk Søppel
+                    <audio class="voiceover" controls>
+                        <source src="../audio/no/problemet/elektrisk_soppel.mp3" type="audio/mp3">
+                        Your browser does not support audio.
+                    </audio>
+                </h2>
                 <p>
-                    Avhending av elektronisk avfall er en medvirkende årsak til å øke verdens drivhusgasser. Elektronisk avfall slipper ut giftstoffer i jord og vann, og påvirker luften når den brennes eller lar den brytes ned.
+                    Avhending av elektronisk avfall er en medvirkende årsak til å øke verdens drivhusgasser. Elektronisk avfall slipper ut giftstoffer i jord og vann, og påvirker luften når den brennes eller brytes ned.
                     I høy konsentrasjon er disse giftstoffene skadelige for både mennesker og dyreliv.<a href="./kilder.html#e-waste-and-how-to-reduce-it" class="source"><sup>[7]</sup></a> Effektene er ikke umiddelbart synlige med det blotte øye, på grunn av at giftstoffene ligger i jorden og blir igjen over tid.
                 </p>
                 <div class="info-picture img-right">
                     <div class="info">
                         <p>
                             Avfallshåndteringssektoren er en betydelig gjerningsmann, som bidrar med 3-5% av de globale klimagassutslippene alene.<a href="./kilder.html#human-waste-processing" class="source"><sup>[8]</sup></a>
-                            Elektronisk avfall blir usikkert kastet ved å bli transportert til utviklingsland, hvor det vanligvis blir spilt etter nyttige materialer før det blir brent eller begravet.
+                            Elektronisk avfall blir utrygt kastet ved å bli transportert til utviklingsland, hvor det vanligvis blir spilt etter nyttige materialer før det blir brent eller begravet.
                             I mellomtiden topper land som Norge de elektroniske avfallskartene.<a href="./kilder.html#worst-electronic-waste-offenders" class="source"><sup>[6]</sup></a>
                         </p>
                     </div>
@@ -73,7 +86,13 @@
                 </div>
             </section>
             <section>
-                <h2>Hvordan stoppe det</h2>
+                <h2>
+                    Hvordan stoppe det
+                    <audio class="voiceover" controls>
+                        <source src="../audio/no/problemet/hvordan_stoppe_det.mp3" type="audio/mp3">
+                        Your browser does not support audio.
+                    </audio>
+                </h2>
                 <p>
                     Det er mange måter å bekjempe det økende elektroniske avfallet, og diverse tiltak blir tatt i bruk.
                     I USA har de begynt å skape insentiver for å designe miljøvennlig elektronikk og effektiv avfallshåndtering.<a href="./kilder.html#green-incentives-usa" class="source"><sup>[10]</sup></a>

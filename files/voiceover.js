@@ -8,7 +8,7 @@ function renderVoiceover() {
         buttonElm.classList.add('voiceover-button');
         buttonElm.innerHTML = `
             <span class="visually-hidden">${NOR ? 'Les høyt' : 'Play voiceover'}</span>
-            <img src="./images/audio.png" alt="Sound icon">
+            <img src="${NOR ? '.' : ''}./images/audio.png" alt="Sound icon">
         `;
         buttonElm.setAttribute('title', NOR ? 'Les høyt' : 'Play voiceover');
         buttonElm.setAttribute('aria-label', NOR ? 'Les høyt' : 'Play voiceover');

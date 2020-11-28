@@ -21,8 +21,9 @@
         <link type="text/css" href="../styles/home.css" rel="stylesheet">
         <link type="text/css" href="../styles/unsdg_squares.css" rel="stylesheet">
         <script charset="utf-8" src="../files/languge_switch.js" type="application/javascript"></script>
+        <script charset="utf-8" src="../files/voiceover.js" type="application/javascript"></script>
     </head>
-    <body id="home" onload="renderLanguageSwitch()">
+    <body id="home" onload="renderLanguageSwitch(); renderVoiceover()">
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
@@ -49,7 +50,13 @@
             </header>
             <section id="problem" class="info-picture img-right">
                 <div class="info">
-                    <h2>Problemet</h2>
+                    <h2>
+                        Problemet
+                        <audio class="voiceover" controls>
+                            <source src="../audio/no/hjem/problemet.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </h2>
                     <p>
                         Planeten vår er i fare for global oppvarming, og effektene vil kjennes i alle områder før eller senere. Klimagassutslipp har økt med 50 prosent siden 1990.<a class="source" href="./kilder.html#gas-emissions"><sup>[1]</sup></a> En av de største årsakene til global oppvarming ser ut til å være menneskelig avfall.<a class="source" href="./kilder.html#climate-change-because-of-human-waste"><sup>[2]</sup></a>
                         <a class="read-more" href="./problem.html">Les mer</a>
@@ -63,7 +70,13 @@
             <section id="solution">
                 <div class="info-picture img-right">
                     <div class="info">
-                        <h2>Løsningen</h2>
+                        <h2>
+                            Løsningen
+                            <audio class="voiceover" controls>
+                                <source src="../audio/no/hjem/losningen.mp3" type="audio/mp3">
+                                Your browser does not support audio.
+                            </audio>
+                        </h2>
                         <p>
                             Vi ønsker å stykre individer med et verktøy som med hjelp av <abbr title="Kunstig Intelligens">AI</abbr> kan identifisere elektriske komponenter og slå opp nyttig informasjon i farta. Det burde gjøre selvreparasjon lettere tilgjengelig, og redusere mengden elektronisk avfall.<a class="source" href="./kilder.html#electronic-waste-survey"><sup>[3]</sup></a>
                             <a class="read-more" href="./losning.html">Les mer</a>
@@ -76,7 +89,13 @@
                 <div class="about info-picture img-left">
                     <img src="../images/unsdg13_no.png" alt="FNs Bærekraftsmål 13 - Stoppe klimaendringene" width="300" >
                     <div class="info">
-                        <h2>Bærekraftsmål 13: Stoppe klimaendringene</h2>
+                        <h2>
+                            Bærekraftsmål 13: Stoppe klimaendringene
+                            <audio class="voiceover" controls>
+                                <source src="../audio/no/unsdg13.mp3" type="audio/mp3">
+                                Your browser does not support audio.
+                            </audio>
+                        </h2>
                         <p>
                             Vi tror at ved å styrke enkeltpersoner til å reparere og konstruere elektronikk i stedet for å kjøpe og
                             kaste, kan vi bidra til å redde miljøet. Les mer om <abbr title="Forente Nasjoner">FN</abbr>s

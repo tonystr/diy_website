@@ -22,8 +22,9 @@
         <link type="text/css" href="../styles/ai_repair.css"     rel="stylesheet">
         <link type="text/css" href="../styles/unsdg_squares.css" rel="stylesheet">
         <script charset="utf-8" src="../files/languge_switch.js" type="application/javascript"></script>
+        <script charset="utf-8" src="../files/voiceover.js" type="application/javascript"></script>
     </head>
-    <body id="home" onload="renderLanguageSwitch()">
+    <body id="home" onload="renderLanguageSwitch(); renderVoiceover()">
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
@@ -47,7 +48,13 @@
             <section id="problem" class="info-picture img-left">
                 <img src="../images/electronic_waste.png" alt="Elektronisk avfall; ødelagt hvit smarttelefon" width="300">
                 <div class="info">
-                    <h2>Problemet</h2>
+                    <h2>
+                        Problemet
+                        <audio class="voiceover" controls>
+                            <source src="../audio/no/losning/problemet.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </h2>
                     <p>
                         Første verdens land produserer en overflod av elektronisk avfall, som direkte truer det globale klimaet.<a href="./kilder.html#e-waste-and-how-to-reduce-it" class="source"><sup>[7]</sup></a> Derfor ønsker vi å hjelpe folk med å reparere elektronikken, forlenge levetiden og redusere avfall. <a href="./problem.html#electronic-waste">Les mer</a>
                     </p>
@@ -56,12 +63,18 @@
             <section id="solution">
                 <div class="info-picture img-right">
                     <div class="info">
-                        <h2>Vår Løsning</h2>
+                        <h2>
+                            Vår Løsning
+                            <audio class="voiceover" controls>
+                                <source src="../audio/no/losning/var_losning.mp3" type="audio/mp3">
+                                Your browser does not support audio.
+                            </audio>
+                        </h2>
                         <p>
-                            Vi prøver på å lage en programvare som kan veilede og hjelpe deg i alle aspekter av elektronisk reparasjon. Den vil bruke en moderne kunstig intelligens (AI) for å analysere bildedata i sanntid.
+                            Vi prøver å lage en programvare som kan veilede og hjelpe deg i alle aspekter av elektronisk reparasjon. Den vil bruke en moderne kunstig intelligens (AI) for å analysere bildedata i sanntid.
                         </p>
                         <p>
-                            Den kommuniserer med serverne våre for å gjenkjenne objekter og elektriske komponenter fra den virkelige verden, og gir brukeren visuelle tips og veiledninger om hvordan de trygt og riktig håndtere dem (se vår <a href="./personvern.html">privacy policy</a> for eventuelle bekymringer).
+                            Den kommuniserer med serverne våre for å gjenkjenne objekter og elektriske komponenter fra den virkelige verden, og gir brukeren visuelle tips og veiledninger om hvordan de trygt og riktig håndtere dem (se <a href="./personvern.html">personvern</a> for eventuelle bekymringer).
                         </p>
                     </div>
                     <img src="../images/ai_assisted_repair.png" alt="Person som utfører elektronisk reparasjon, med elektroniske komponenter navngitt" height="520">
@@ -69,18 +82,18 @@
                 <div class='table-wrapper'>
                     <table>
                         <tbody>
-                            <tr><th>Relevans</th><th>Passende</th><th>Mulighet for løsning</th></tr>
+                            <tr><th>Relevans</th><th>Passelighet</th><th>Mulighet for løsning</th></tr>
                             <tr>
                                 <td>
-                                    Norge er #1 når det gjelder elektronisk avfall per innbygger.<a href="./kilder.html#worst-electronic-waste-offenders" class="source"><sup>[6]</sup></a> Norge er flinke til å resirkulere elektronikk, men vi kan gjøre betydelige forbedringer når det gjelder reparasjon av elektronikk istedenfor å kjøpe et nytt produkt.
+                                    Norge er #1 når det gjelder elektronisk avfall per innbygger.<a href="./kilder.html#worst-electronic-waste-offenders" class="source"><sup>[6]</sup></a> Nordmenn er flinke til å resirkulere elektronikk, men kan gjøre betydelige forbedringer når det gjelder reparasjon av elektronikk istedenfor å kjøpe nye produkter.
                                 </td>
                                 <td>
                                     Løsningen vår er enkel å bruke på grunn av det utvidedet virkelighets brukergrensesnittet, og gir brukeren en presis guide for hvert trinn som kreves for å reparere vanlig elektronisk utstyr.
                                     Bruk av teknologien er tilgjengelig på de fleste smarttelefoner og vr-utstyr samt smart-briller.
                                 </td>
                                 <td>
-                                    Trening og utvikling av AI er en iterativ prosess. AI trenger gigabyte av data for å lære de forskjellige problemene elektroniske enheter kan ha, samt deres respektive løsninger.
-                                    AI vil vokse organisk over tid, under kontrollert testing
+                                    Trening og utvikling av kunstig intelligens er en iterativ prosess. kunstig intelligens trenger gigabytes av data for å lære de forskjellige problemene elektroniske enheter kan ha, samt deres respektive løsninger.
+                                    kunstig intelligens vil vokse organisk over tid, under kontrollert testing
                                 </td>
                             </tr>
                         </tbody>
@@ -91,7 +104,13 @@
                 <div class='info-picture img-left'>
                     <img src="../images/unsdg13_no.png" alt="FNs Bærekraftsmål 13 - Stoppe klimaendringene" width="300" >
                     <div class="info">
-                        <h2>Bærekraftsmål 13: Stoppe klimaendringene</h2>
+                        <h2>
+                            Bærekraftsmål 13: Stoppe klimaendringene
+                            <audio class="voiceover" controls>
+                                <source src="../audio/no/unsdg13.mp3" type="audio/mp3">
+                                Your browser does not support audio.
+                            </audio>
+                        </h2>
                         <p>
                             Vi tror at ved å styrke enkeltpersoner til å reparere og konstruere elektronikk i stedet for å kjøpe og
                             kaste, kan vi bidra til å redde miljøet. Les mer om FNs
@@ -128,7 +147,13 @@
             </section>
             <section id="prototype" class='info-picture img-right'>
                 <div class="info">
-                    <h2>Smart Briller</h2>
+                    <h2>
+                        Smart Briller
+                        <audio class="voiceover" controls>
+                            <source src="../audio/no/losning/smart_briller.mp3" type="audio/mp3">
+                            Your browser does not support audio.
+                        </audio>
+                    </h2>
                     <p>
                         Briller har lenge vært et symbol for intelligens, men nå vil vi bokstavelig talt sette intelligens i briller.
                         Et par briller med to fremovervendte kameraer og laserteknologi lar oss fange virkeligheten i

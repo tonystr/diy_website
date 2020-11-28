@@ -5,6 +5,16 @@
     100% { opacity: 1; }
 }
 
+@keyframes fade-in-opacity-smooth {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade-out-opacity {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -68,6 +78,28 @@ footer .center {
     display: flex;
     justify-content: center;
     align-items: baseline;
+}
+
+/* Sources hover tooltip */
+
+#hover-tooltip {
+    margin-top: 2rem;
+    position: fixed;
+    background-color: #385e62;
+    color: #edffe3;
+    padding: .1rem .2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 1000;
+    animation: fade-in-opacity-smooth .2s;
+}
+
+#hover-tooltip.vanish {
+    animation: fade-out-opacity .8s;
+}
+
+#hover-tooltip .key-value {
+    opacity: .8;
 }
 
 /* Fixed header */

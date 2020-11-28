@@ -132,23 +132,42 @@ footer .center {
     justify-content: right;
 }
 
+.fixed-header .lang-and-nav div {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d1dae1;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.fixed-header .lang-and-nav div:hover {
+    border-color: #4b61ae;
+}
+
+.fixed-header .lang-and-nav div .flag {
+    border: 2px solid #007060;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
 .fixed-header .lang-and-nav.select-inside {
     align-items: center;
 }
 
 .fixed-header .language-select {
     border: none;
-    box-shadow: inset 0 0 0 1px #adadad;
+    box-shadow: none; /*inset 0 0 0 1px #adadad;*/
+    background-color: transparent;
+    color: #000;
     font-size: .9rem;
     font-family: inherit;
-    border-radius: 3px;
     cursor: pointer;
     /* Animation to mask transition from <a/> to javascript-inserted element */
     animation: fade-in-opacity .88s;
 }
 
 .fixed-header .language-select:hover {
-    box-shadow: inset 0 0 0 1px #5078d7;
 }
 
 /* section horizontal info/pucture division */

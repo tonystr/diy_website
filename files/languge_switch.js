@@ -7,6 +7,7 @@ function renderLanguageSwitch() {
     const nor = window.location.href.includes('/no/');
 
     divElm.innerHTML = `
+        <img class="flag" style="border-color:${nor ? '#ebf7fc' : '#5b61ae'}" alt="${nor ? 'Norske flagg' : 'English flag'}" src="${nor ? '.' : ''}./images/flags/flag_${nor ? 'no' : 'en'}.png" height="20">
         <label class="visually-hidden" for="language-select">${nor ? 'Språk: ' : 'Language: '}</label>
         <select class="language-select" id="language-select" aria-label="${nor ? 'Velg språk: ' : 'Select language: '}">
             ${nor ? `
@@ -19,12 +20,9 @@ function renderLanguageSwitch() {
         </select>
     `;
 
-    divElm.children[1].addEventListener('change', () => {
+    divElm.children[2].addEventListener('change', () => {
         window.location.href = href;
     });
-
-    // <label class="visually-hidden" for="source-search">Search sources:</label>
-
 
     languageElm.parentElement.classList.add('select-inside');
     languageElm.parentElement.insertBefore(divElm, languageElm);

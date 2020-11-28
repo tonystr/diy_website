@@ -1,5 +1,5 @@
 
-function renderLanguageSwitch() {
+window.addEventListener('load', () => {
     const languageElm = document.querySelector('.fixed-header .language');
     const href = languageElm.href;
 
@@ -27,4 +27,4 @@ function renderLanguageSwitch() {
     languageElm.parentElement.classList.add('select-inside');
     languageElm.parentElement.insertBefore(divElm, languageElm);
     languageElm.classList.add('visually-hidden');
-}
+});

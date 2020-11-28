@@ -1,7 +1,7 @@
 
 const NOR = window.location.href.includes('/no/');
 
-function renderVoiceover() {
+window.addEventListener('load', () => {
     for (const audioElm of Array.from(document.getElementsByClassName('voiceover'))) {
         audioElm.classList.add('visually-hidden');
         const buttonElm = document.createElement('button');
@@ -19,4 +19,4 @@ function renderVoiceover() {
         })
         audioElm.parentNode.insertBefore(buttonElm, audioElm);
     }
-}
+});

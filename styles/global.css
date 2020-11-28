@@ -80,10 +80,21 @@ footer .center {
     align-items: baseline;
 }
 
+/* Sources hover */
+
+a.source:hover {
+    border-radius: 2px;
+}
+
+a.source:hover sup {
+    background-color: #385e62;
+        border-radius: 2px;
+}
+
 /* Sources hover tooltip */
 
 #hover-tooltip {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     position: fixed;
     background-color: #385e62;
     color: #edffe3;

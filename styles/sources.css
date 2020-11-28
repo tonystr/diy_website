@@ -24,6 +24,7 @@ blockquote {
 
 #no-results,
 #enable-javascript {
+    display: block;
     text-align: center;
 }
 

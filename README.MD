@@ -9,4 +9,4 @@ This website was developed as an exam-project for [OsloMet](https://www.oslomet.
 
 ## Live URL
 
-(https://tonystr.github.io/diy_website/)[https://tonystr.github.io/diy_website/]
+[https://tonystr.github.io/diy_website/](https://tonystr.github.io/diy_website/)

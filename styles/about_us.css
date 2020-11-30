@@ -55,6 +55,18 @@ summary:hover {
     font-weight: bold;
 }
 
+/* Prototype */
+
+.prototype-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.prototype-images img {
+    margin-bottom: 2rem;
+}
+
 /* Development notes */
 
 #development time {

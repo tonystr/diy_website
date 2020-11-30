@@ -23,6 +23,8 @@ window.addEventListener('load', () => {
         buttonElm.setAttribute('aria-label', NOR ? 'Les høyt' : 'Play voiceover');
         buttonElm.addEventListener('click', () => {
             buttonElm.classList.add('visually-hidden');
+            buttonElm.setAttribute('tabindex', '-1');
+
             audioElm.classList.remove('visually-hidden');
             audioElm.play();
             audioElm.setAttribute('tabindex', '0');

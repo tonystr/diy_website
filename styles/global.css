@@ -20,6 +20,7 @@ html, body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #030722;
+    overflow-x: hidden;
 }
 
 p {
@@ -37,6 +38,10 @@ a.source {
 a:hover {
     background-color: #385e62;
     color: #edffe3;
+}
+
+audio {
+    max-width: 80vw;
 }
 
 code {
@@ -208,7 +213,7 @@ a.source:hover sup {
 
 .fixed-header .language-select {
     border: none;
-    box-shadow: none; /*inset 0 0 0 1px #adadad;*/
+    box-shadow: none;
     background-color: transparent;
     color: #000;
     font-size: .9rem;
@@ -218,7 +223,7 @@ a.source:hover sup {
     animation: fade-in-opacity .88s;
 }
 
-/* section horizontal info/pucture division */
+/* section horizontal info/picture division */
 
 .info-picture {
     display: flex;
@@ -226,13 +231,18 @@ a.source:hover sup {
     align-items: center;
 }
 
+.info-picture .info {
+    max-width: 70vw;
+    flex-shrink: 1;
+}
+
 .info-picture img {
     max-width: 40%;
+    flex-shrink: 0;
 }
 
 .info-picture.img-left .info {
     margin-left: 4rem;
-    flex-shrink: 1;
 }
 
 .info-picture.img-right .info {
@@ -333,6 +343,12 @@ a.source:hover sup {
 
     .info-picture img {
         max-width: 100%;
+    }
+}
+
+@media(max-width: 694px) {
+    .info-picture .info {
+        max-width: 90vw;
     }
 }
 

@@ -297,6 +297,38 @@ a.source:hover sup {
     width: 1px;
 }
 
+/* Accessibility link for keyboard users to skip to main content */
+
+a.skip-to-main {
+    clip: rect(1px,1px,1px,1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+a.skip-to-main:focus, a.skip-to-main:active {
+    font-size: 1.4rem !important;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0,0,0,.6);
+    clip: auto !important;
+    background-color: #fff;
+    color: #007060;
+    display: block;
+    font-size: 14px;
+    font-size: .875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: .5rem .6rem;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
 /* Reactivity */
 
 @media(max-width: 750px) {

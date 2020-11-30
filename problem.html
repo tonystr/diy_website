@@ -25,6 +25,8 @@
         <script charset="utf-8" src="./files/source_tooltip.js" type="application/javascript"></script>
     </head>
     <body id="problem">
+		<!-- Accessibility feature for keyboard users, see: https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/ -->
+		<a class="skip-to-main" href="#main-content">Jump to main content</a>
         <div class="fixed-header">
             <a href="./">
                 <div class="brand">
@@ -40,7 +42,7 @@
                 </nav>
             </div>
         </div>
-        <main role="main">
+        <main id="main-content" role="main">
             <header>
                 <!-- Image is set through CSS, because it's decorative and serves no important information. No alt text is needed -->
                 <h1>Electronic Waste</h1>

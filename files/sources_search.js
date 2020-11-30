@@ -1,3 +1,10 @@
+'use strict'
+/*
+    All scripts are written in ES2020 (latest JavaScript version).
+    They will break in some browsers running older implementations
+    of ECMAScript, but the user will experience no issues, because
+    the website works fine without any of these scripts.
+*/
 
 const NOR = window.location.href.includes('/no/');
 

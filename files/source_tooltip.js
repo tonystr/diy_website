@@ -1,3 +1,11 @@
+'use strict'
+/*
+    All scripts are written in ES2020 (latest JavaScript version).
+    They will break in some browsers running older implementations
+    of ECMAScript, but the user will experience no issues, because
+    the website works fine without any of these scripts.
+*/
+
 const SOURCES = [
   '[1] 50% Higher Gas Emissions',
   '[2] Climate Change and Waste',
@@ -48,17 +56,19 @@ window.addEventListener('load', ev => {
             const tooltipRect = tooltip.getBoundingClientRect();
             tooltip.setAttribute('style', `top:${rect.top}px; left: ${rect.left + rect.width / 2 - tooltipRect.width / 2}px`);
         }
+
         const unrender = () => {
             const tooltip = document.getElementById('hover-tooltip');
             if (tooltip) {
                 tooltip.parentElement.removeChild(tooltip);
             }
         }
+
         sup.addEventListener('mouseover', e => {
             time = +new Date();
             setTimeout(render, span);
-            console.log(ev.target.clientY);
         });
+
         sup.addEventListener('mouseleave', e => {
             time = 0;
             const tooltip = document.getElementById('hover-tooltip');

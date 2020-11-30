@@ -172,6 +172,7 @@ a.source:hover sup {
 .fixed-header .brand img {
     position: absolute;
     padding-left: .4rem;
+    top: 0;
 }
 
 .fixed-header .brand:hover img {

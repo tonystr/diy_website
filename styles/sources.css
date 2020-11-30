@@ -53,7 +53,11 @@ blockquote {
     padding: .3rem .6rem;
 }
 
-#search input:focus::placeholder {
+#search input:focus {
+    outline: none;
+}
+
+#search:focus-within input::placeholder {
     color: rgba(237, 255, 227, 0.42);
 }
 

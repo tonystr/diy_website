@@ -11,6 +11,8 @@ const NOR = window.location.href.includes('/no/');
 window.addEventListener('load', () => {
     for (const audioElm of Array.from(document.getElementsByClassName('voiceover'))) {
         audioElm.classList.add('visually-hidden');
+        audioElm.setAttribute('tabindex', '-1');
+
         const buttonElm = document.createElement('button');
         buttonElm.classList.add('voiceover-button');
         buttonElm.innerHTML = `
@@ -23,7 +25,10 @@ window.addEventListener('load', () => {
             buttonElm.classList.add('visually-hidden');
             audioElm.classList.remove('visually-hidden');
             audioElm.play();
+            audioElm.setAttribute('tabindex', '0');
+            audioElm.focus();
         })
+
         audioElm.parentNode.insertBefore(buttonElm, audioElm);
     }
 });

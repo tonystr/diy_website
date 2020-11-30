@@ -178,12 +178,13 @@ a.source:hover sup {
     filter: invert(100%) hue-rotate(125deg) brightness(222%);
 }
 
-
 .fixed-header nav > * {
     margin-left: 2rem;
     font-size: 1.4rem;
     text-decoration: none;
 }
+
+/* Language selection */
 
 .fixed-header .language {
     font-size: 1rem;
@@ -207,6 +208,10 @@ a.source:hover sup {
     border: 2px solid #d1dae1;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+}
+
+.fixed-header .lang-and-nav div:focus-within {
+    border-color: #385e62;
 }
 
 .fixed-header .lang-and-nav div:hover {
@@ -233,6 +238,10 @@ a.source:hover sup {
     cursor: pointer;
     /* Animation to mask transition from <a/> to javascript-inserted element */
     animation: fade-in-opacity .88s;
+}
+
+.fixed-header .language-select:focus {
+    outline: none;
 }
 
 /* section horizontal info/picture division */

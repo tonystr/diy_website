@@ -18,11 +18,11 @@ window.addEventListener('load', () => {
         <label class="visually-hidden" for="language-select">${nor ? 'Språk: ' : 'Language: '}</label>
         <select class="language-select" id="language-select" aria-label="${nor ? 'Velg språk: ' : 'Select language: '}">
             ${nor ? `
-                <option>Norsk</option>
-                <option>English</option>
+                <option land="no" title="Norsk">Norsk</option>
+                <option land="en" title="Engelsk">English</option>
             ` : `
-                <option>English</option>
-                <option>Norsk</option>
+                <option land="en" title="English">English</option>
+                <option land="no" title="Norwegian">Norsk</option>
             `}
         </select>
     `;

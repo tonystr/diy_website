@@ -33,5 +33,6 @@ window.addEventListener('load', () => {
 
     languageElm.parentElement.classList.add('select-inside');
     languageElm.parentElement.insertBefore(divElm, languageElm);
+    languageElm.setAttribute('tabindex', '-1   ');
     languageElm.classList.add('visually-hidden');
 });

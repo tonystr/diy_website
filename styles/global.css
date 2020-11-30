@@ -51,6 +51,10 @@ code {
     border-radius: 4px;
 }
 
+:focus {
+    outline: 4px solid #007060;
+}
+
 /* Link on dark background */
 footer a {
     color: #a0f0da;

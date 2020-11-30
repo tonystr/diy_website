@@ -299,7 +299,7 @@ a.source:hover sup {
 
 /* Reactivity */
 
-@media(max-width: 800px) {
+@media(max-width: 750px) {
     .fixed-header .lang-and-nav {
         margin-left: 0;
     }
@@ -370,7 +370,7 @@ a.source:hover sup {
         padding: 0;
         width: calc(100vw - 1rem);
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
     }
 
     .fixed-header nav > * {
@@ -396,6 +396,12 @@ a.source:hover sup {
         position: absolute;
         top: 10px;
         right: 1rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .fixed-header nav {
+        justify-content: space-between;
     }
 }
 
